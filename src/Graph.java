@@ -304,7 +304,8 @@ class Main {
             break;
         }
 
-        while (true) {
+        boolean x = true;
+        while (x) {
             //print menu and get user input
             int userChoice;
             while (true) {
@@ -479,6 +480,7 @@ class Main {
                     System.out.println("Best-First: " + ((finishT - startT) / 5) + " nanoseconds\n");
                     break;
                 case 7:
+                    x = false;
                     break;
             }
         }
